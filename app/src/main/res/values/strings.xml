@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Bagan</string>
+    <string name="chasabad"> চাষাবাদ </string>
+    <string name="chasersomoykal"> সময়কাল </string>
+    <string name="biz"> বীজ </string>
+    <string name="Sar"> সার </string>
+    <string name="Blainasok"> বালাইনাশক </string>
+    <string name="alochona"> আলোচনা </string>
+
+</resources>

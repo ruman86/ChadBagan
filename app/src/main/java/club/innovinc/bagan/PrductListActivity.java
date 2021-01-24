@@ -32,10 +32,10 @@ public class PrductListActivity extends AppCompatActivity {
 
         context = getApplicationContext();
         recyclerView = findViewById(R.id.rov_product_list);
-
+        String cate = getIntent().getStringExtra("cate");
         Retrofit retrofit = RetrofitClientInstance.getRetrofitInstance();
         ApiService apiService = retrofit.create(ApiService.class);
-        Call<List<ProductContentModel>> productList = apiService.getProductList("1001");
+        Call<List<ProductContentModel>> productList = apiService.getProductList(cate);
         productList.enqueue(new Callback<List<ProductContentModel>>() {
             @Override
             public void onResponse(Call<List<ProductContentModel>> call, Response<List<ProductContentModel>> response) {
